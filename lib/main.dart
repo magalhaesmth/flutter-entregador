@@ -1,6 +1,8 @@
-import 'package:entregas_application/view/entregas_form.dart';
-import 'package:entregas_application/view/entregas_lista.dart';
+import 'package:entregas_application/app/view/login_page.dart';
 import 'package:flutter/material.dart';
+import 'app/view/entregas_form.dart';
+import 'app/view/entregas_lista.dart';
+import 'app/view/entregas_lista_dinamica.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,8 +20,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
+      //home: LoginPage(),
       routes: {
-        '/': (context) => const EntregasLista(),
+        '/': (context) => const LoginPage(),
+        '/entregasListaDinamica': (context) => EntregasListaDinamica(),
         '/entregasForm': (context) => EntregasForm()
       },
     );
