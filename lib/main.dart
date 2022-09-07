@@ -1,8 +1,8 @@
+import 'package:entregas_application/app/view/lista/entregas_lista.dart';
 import 'package:entregas_application/app/view/login_page.dart';
 import 'package:flutter/material.dart';
 import 'app/view/entregas_form.dart';
-import 'app/view/entregas_lista.dart';
-import 'app/view/entregas_lista_dinamica.dart';
+import 'app/view/lista/entregas_lista_dinamica.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,13 +18,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.pink,
       ),
       //home: LoginPage(),
       routes: {
-        '/': (context) => const LoginPage(),
-        '/entregasListaDinamica': (context) => EntregasListaDinamica(),
-        '/entregasForm': (context) => EntregasForm()
+        '/': (context) => EntregasLista(),
+        '/entregasFormDAO': (context) => EntregasForm()
       },
     );
   }
