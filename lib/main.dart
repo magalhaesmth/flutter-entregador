@@ -1,5 +1,6 @@
 import 'package:entregas_application/app/view/lista/entregas_lista.dart';
 import 'package:entregas_application/app/view/login_page.dart';
+import 'package:entregas_application/app/view/tela_introdutoria.dart';
 import 'package:flutter/material.dart';
 import 'app/view/entregas_form.dart';
 import 'app/view/lista/entregas_lista_dinamica.dart';
@@ -22,8 +23,10 @@ class MyApp extends StatelessWidget {
       ),
       //home: LoginPage(),
       routes: {
-        '/': (context) => EntregasLista(),
-        '/entregasFormDAO': (context) => EntregasForm()
+        '/': (context) => const TelaIntrodutoria(),
+        '/loginPage': (context) => LoginPage(),
+        '/entregasListaDinamica': (context) => EntregasListaDinamica(),
+        '/entregasForm': (context) => EntregasForm()
       },
     );
   }

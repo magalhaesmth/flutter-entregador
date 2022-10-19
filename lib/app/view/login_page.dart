@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
-
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.deepPurple,
       body: Padding(
         padding: EdgeInsets.all(20),
         child: Center(
@@ -24,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
                 keyboardType: TextInputType.number,
                 style: new TextStyle(color: Colors.white, fontSize: 20),
                 decoration: InputDecoration(
-                    labelText: "CPF",
+                    labelText: "Usuario",
                     labelStyle: TextStyle(color: Colors.white)),
               ),
               Divider(),

@@ -95,3 +95,6 @@ class EntregasDAO {
     }
   }
 }
+
+// Criar tela introdutoria Fazer Login e Logo em cima pique o do eduardo
+// Após tela de login com circle avatar ou cadastrar
