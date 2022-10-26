@@ -88,7 +88,7 @@ class _EntregasListaDinamicaState extends State<EntregasListaDinamica> {
                           children: [
                             IconButton(
                               icon: const Icon(Icons.edit),
-                              color: Colors.blue,
+                              color: Colors.black,
                               onPressed: () {
                                 Navigator.pushNamed(context, '/entregasForm',
                                         arguments: entregas)
@@ -98,7 +98,7 @@ class _EntregasListaDinamicaState extends State<EntregasListaDinamica> {
                               },
                             ),
                             IconButton(
-                              icon: const Icon(Icons.delete),
+                              icon: const Icon(Icons.cancel),
                               color: Colors.red,
                               onPressed: () {
                                 excluir(entregas['id'] as int);

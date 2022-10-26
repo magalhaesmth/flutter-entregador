@@ -1,9 +1,8 @@
-import 'package:entregas_application/app/view/lista/entregas_lista.dart';
 import 'package:entregas_application/app/view/login_page.dart';
 import 'package:entregas_application/app/view/tela_introdutoria.dart';
 import 'package:flutter/material.dart';
+import 'app/lista/entregas_lista_dinamica.dart';
 import 'app/view/entregas_form.dart';
-import 'app/view/lista/entregas_lista_dinamica.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.purple,
       ),
       //home: LoginPage(),
       routes: {
