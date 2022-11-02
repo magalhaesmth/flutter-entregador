@@ -59,8 +59,15 @@ class _EntregasListaDinamicaState extends State<EntregasListaDinamica> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Lista de Entregas Realizadas'),
+          centerTitle: true,
+          title: const Text('Lista de Entregas'),
           actions: [
+            IconButton(
+                icon: const Icon(Icons.person_pin),
+                onPressed: () =>
+                    Navigator.pushNamed(context, '/card').then((value) {
+                      setState(() {});
+                    })),
             IconButton(
                 icon: const Icon(Icons.add),
                 onPressed: () =>

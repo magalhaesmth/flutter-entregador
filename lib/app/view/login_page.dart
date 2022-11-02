@@ -37,9 +37,10 @@ class _LoginPageState extends State<LoginPage> {
             height: 20,
           ),
           TextFormField(
-            keyboardType: TextInputType.name,
+            keyboardType: TextInputType.emailAddress,
             decoration: InputDecoration(
               labelText: "Informe seu nome de usuário",
+              hintText: "nome@email.com",
               labelStyle: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.w400,
@@ -52,7 +53,7 @@ class _LoginPageState extends State<LoginPage> {
           ),
           TextFormField(
             autofocus: true,
-            keyboardType: TextInputType.number,
+            keyboardType: TextInputType.visiblePassword,
             decoration: InputDecoration(
               labelText: "Informe sua senha",
               labelStyle: TextStyle(
